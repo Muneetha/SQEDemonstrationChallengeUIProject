@@ -1,4 +1,4 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="DemoProject" verbose="10">
 	<test name="Tests">
 		<!-- Enter group name to execute specific set of tests -->

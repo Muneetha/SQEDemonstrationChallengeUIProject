@@ -36,7 +36,7 @@ public class TestBase {
     private void initializelDriver() {
         if (config.getBrowser().equalsIgnoreCase("chrome")) {
             if (config.getPlatform().equalsIgnoreCase("mac")) {
-                System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/mac/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/windows/chromedriver.exe");
             } else {
                 System.setProperty("webdriver.chrome.driver",
                         "src/test/resources/chromedriver/windows/chromedriver.exe");

@@ -47,5 +47,41 @@ We will be evaluating
 
 #### Test Cases
 
- 1.  
+ Happy Path Test Cases:
+1. User able to complete the order with valid details for all the fields using "Credit Card" as Payment information.
+2. User able to complete the order with valid details for all the fields using "Cash on Pickup" as Payment information.
+3. User not able to complete the order with valid details for all the fields and missing Name/Email as "Cash on Pickup"/"Credit Card" as Payment information.
+
+Negative Tests
+1. User able to complete the order with invalid details for all the fields using "Credit Card" as Payment information.
+2. User able to complete the order with invalid details for all the fields using "Cash on Pickup" as Payment information.
+
+
+Field Validations
+1. Quantity is allowing from 0-99999 only
+2. Name/Email/Phone text fields are allowing max of 100 characters only.
+3. Error message is displayed for missing Name while ordering.
+4. Error message is displayed for missing Phone while ordering.
+5. User able to clear the quantity field without any default number.
+6. Success Message is not displayed properly.  
+
+
+Bugs:
+1. User able to select toppings1 and topings2 though Pizza 1 is selected as no toppings.
+2. User able to select toppings1 and topings2 though Pizza 1 is selected as only 1 topping.
+3. User able to select same topping for both Topings1 and Topings2 dropdowns.(In my openion, user should not be able to pick but Not sure if this is a bug as expected as per the BRD).
+4. Quantity text box is accepting Alpha Numerics, special characters and floating point numbers. Need to restrict to whole numbers.
+5. when User enters invalid text in Quantity, Cost field is showing as NaN. Is this a functional requirement? if pointer 5 is acceptable for everything.
+6. User able to enter Alpha Numerics, special characters for name text field.
+7. User able to enter Alpha Numerics, special characters for email text field. NO email format validation.
+8.User able to enter Alpha Numerics, special characters for Phone text field.
+9. User able to select both "Credit Card" and "Cash on Pickup" radio buttons.
+10. No payment section is displayed on selecting "Credit Card" radio button.
+11. User able to complete the order without selecting toppings when Pizza1 is selected as 2 toppings.
+12. User able to complete the order by providing zero to Quantity text field.
+13. Toppings1 and Toppings2 fields are not set to defaults on selecting Reset button to clear everything.
+14. User able to complete the order without selecting the topings on selecting Pizza1 as 2 toppings.
+
+
+ 
 
